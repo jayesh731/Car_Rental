@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Tailwind  -->
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/990ff5ad1c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container relative mx-auto font-display">
+        <!-- Navbar -->
+        <nav class="container relative mx-auto p-5 h-11">
+            <!-- Flex container -->
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <img src="./asset/logo.png" alt="logo-header">
+                    <h3 class="font-semibold text-Cblue">RENTCARS</h3>
+                </div>
+                <!-- Menu -->
+                <div class="hidden flex-col lg:flex lg:flex-row space-x-5">
+                    <a href="#" class="text-headerFontColor">Become a renter</a>
+                    <a href="#" class="text-headerFontColor">Rental deals</a>
+                    <a href="#" class="text-headerFontColor">How it work</a>
+                    <a href="#" class="text-headerFontColor">Why choose us</a>
+                </div>
+                <!-- Buttons -->
+                <div class="hidden items-center space-x-7 lg:flex">
+                    <button class="text-headerFontColor">Sign in</button>
+                    <button class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md border-black border-1">Sign
+                        up</button>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <!-- <div id="menuBtn" class="hamburger lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+                <div class="lg:hidden">
+                    <div id="menuBtn" class="block hamburger focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-center"></span>
+                        <span class="hamburger-bottom"></span>
+                    </div>
+                    <!-- Mobile menu -->
+                    <div class="lg:hidden">
+                        <div id="menu"
+                            class="hidden flex-col self-end items-center absolute p-8 mt-10 space-y-7 bg-white z-1001 right-6 drop-shadow-md">
+                            <a href="#" class="text-headerFontColor">Become a renter</a>
+                            <a href="#" class="text-headerFontColor">Rental deals</a>
+                            <a href="#" class="text-headerFontColor">How it work</a>
+                            <a href="#" class="text-headerFontColor">Why choose us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Landing Page -->
+        <section id="landingPage">
+            <!-- Flex container -->
+            <div class="container mx-auto md:relative -top-5 p-5 h-screen flex flex-col  md:flex-row">
+                <!-- Left Container -->
+                <div class=" flex flex-col space-y-10 mt-60 max-w-[407px]">
+                    <h1 class="text-4xl font-semibold text-[#242424]">Find, book and rent a car
+                        <span class="text-Cblue relative">Easily <img src="./asset/mark.png" alt="mark_img"
+                                class="absolute right-0">
+                        </span>
+
+                    </h1>
+                    <p class="text-paragraph">Get a car wherever and whenever you need it with your IOS and Android
+                        device.
+                    </p>
+                    <!-- Download Button Container -->
+                    <div class="flex space-x-3">
+                        <img src="./asset/google_play.png" alt="google_play_logo">
+                        <img src="./asset/app_store.png" alt="app_store_logo">
+                    </div>
+                </div>
+                <!-- Right Container -->
+                <div>
+                    <img src="./asset/landingPage_img.png" alt="car_img"
+                        class="max-w-[300px]  md:absolute top-50 right-0 z-10 sm:max-w-[700px] lg:-right-40 xl:max-w-[800px]">
+                    <!-- Background image of car -->
+                    <img src="./asset/Frame.png" alt="frame img"    
+                        class="hidden ExtraBig:flex max-h-[866px] max-w-[803px] absolute top-0 right-0 big:min-h-[866px]"> 
+                </div>
+
+                <!-- Landing Page Footer -->
+                <section id="landingFooter" class="container absolute pr-5 mx-auto h-11">
+                    <!-- Flex container -->
+                    <div class="flex p-3 pl-8 relative justify-between bg-white top-170 z-1000 shadow-lFooter">
+                        <!-- Location -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/location.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Location</p>
+                                <p class="text-[#B6B6B6]">Search your location</p>
+                            </div>
+
+                        </div>
+                        <!-- Pickup date -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Location</p>
+                                <p class="text-[#B6B6B6]">Search your location</p>
+                            </div>
+                        </div>
+                        <!-- Return date -->
+                        <div class="flex space-x-2 cursor-pointer">
+                            <img src="./asset/calendar.png" alt="" class="w-8 h-8">
+                            <div>
+                                <p class="text-[#3E3E3E]">Location</p>
+                                <p class="text-[#B6B6B6]">Search your location</p>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button
+                            class="bg-buttonBg text-whiteBtn w-[125px] h-[43px] rounded-md cursor-pointer">Search</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <!-- Link JS -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
